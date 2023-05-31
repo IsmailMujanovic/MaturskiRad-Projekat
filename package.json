@@ -1,0 +1,12 @@
+{
+  "name": "maturskirad-projekat",
+  "version": "1.0.0",
+  "description": "RSA algoritam, najsigurniji algoritam za enkripciju podataka. Mana je sto je spor i zahtijeva dosta kompjuterske snage, pogotovo za dekripciju.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

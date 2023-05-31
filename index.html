@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>RSA Encryption</title>
+    <script src="https://kit.fontawesome.com/c113618e3f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">RSA Algorithm</h1>
+    <h2 style="text-align: center;">Implemented Using Javascript</h2>
+    <hr>
+    <div class="container">
+        <table class="center">
+            <tr>
+                <td>Enter P:</td>
+                <td class="search-box"><input type="number" value="53" id="p"></td>
+            </tr>
+            <tr>
+                <td>Enter Q :</td>
+                <td class="search-box"><input type="number" value="59" id="q"></p></td>
+            </tr>
+            <tr>
+                <td>Enter the plaintext:<br>[A=1, B=2,...]</td>
+                <td class="search-box"><input type="number" value="89" id="msg"></p></td>
+            </tr>
+            <tr>
+                <td>Key Length (N):</td>
+                <td><p id="keylength(N)"></p></td>
+            </tr>
+            <tr>
+                <td>Totient (φ(N)):</td>
+                <td><p id="totient(φ(N))"></p></td>
+            </tr>
+            <tr>
+                <td>Public Exponent (e):</td>
+                <td><p id="publicexponent(e)"></p></td>
+            </tr>
+            <tr>
+                <td>Private Exponent (d):</td>
+                <td><p id="privateexponent(d)"></p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><td>How to use:</td></td>
+            </tr>
+            <tr>
+                <td>Public Key (e,N):</td>
+                <td>(<span id="publickey"></span>, <span id="publickeylength"></span>)</td>
+                <td>Plaintext^e(mod N) = Ciphertext</td>
+            </tr>
+            <tr>
+                <td>Private Key (d,N):</td>
+                <td>(<span id="privatekey"></span>, <span id="privatekeylength"></span>)</td>
+                <td>Ciphertext^d(mod N) = Plaintext</td>
+            </tr>
+            <tr>
+                <td>Ciphertext:</td>
+                <td><p id="ciphertext(ct)"></p></td>
+            </tr>
+            <tr>
+                <td><button class="normal" onclick="RSA();">Encrypt</button></td>
+            </tr>
+        </table>
+    </div>
+    <script type='text/javascript' src="script.js"></script>
+</body>
+</html>
